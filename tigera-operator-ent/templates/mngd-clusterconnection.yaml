@@ -1,0 +1,8 @@
+{{ if and .Values.mngdcluster (eq .Values.mngdcluster.enabled true) }}
+apiVersion: operator.tigera.io/v1
+kind: ManagementClusterConnection
+metadata:
+  name: tigera-secure
+spec:
+  managementClusterAddr: "a04585e8cae1f41109dc5733556db061-1296376157.ca-central-1.elb.amazonaws.com:9449"
+{{ end }}

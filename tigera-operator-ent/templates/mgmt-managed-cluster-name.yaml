@@ -1,0 +1,8 @@
+apiVersion: projectcalico.org/v3
+kind: ManagedCluster
+metadata:
+  annotations:
+    certs.tigera.io/active-fingerprint: 98cfe62829a84c93a4d8900b1923b51ce6ece936b90554685e15401fa80bad3f
+  name: my-managed-cluster
+spec:
+  operatorNamespace: tigera-operator
