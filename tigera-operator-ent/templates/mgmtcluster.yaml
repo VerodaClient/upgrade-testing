@@ -4,5 +4,5 @@ kind: ManagementCluster
 metadata:
   name: tigera-secure
 spec:
-  address: abcd:9449
+  address: a04585e8cae1f41109dc5733556db061-1296376157.ca-central-1.elb.amazonaws.com:9449
 {{ end }}
