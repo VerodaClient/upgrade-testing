@@ -11,4 +11,8 @@ tigera-operator:
   tigera-prometheus-operator:
     imagePullSecretReferences:
       - name: tigera-pull-secret
+  manager:
+    enabled: false
+  logStorage:
+    enabled: false
 

@@ -1,0 +1,8 @@
+{{ if and .Values.mgmtcluster (eq .Values.mgmtcluster.enabled true) }}
+apiVersion: operator.tigera.io/v1
+kind: ManagementCluster
+metadata:
+  name: tigera-secure
+spec:
+  address: abcd:9449
+{{ end }}
