@@ -1,0 +1,14 @@
+tigera-operator:
+  imagePullSecrets: # ideally we should not need this but there could be a bug in the helm-charts
+    tigera-pull-secret: unusedvalue
+  installation:
+    enabled: true
+    variant: TigeraSecureEnterprise
+    kubernetesProvider: "EKS"
+    imagePullSecrets:
+      - name: tigera-pull-secret
+
+  tigera-prometheus-operator:
+    imagePullSecretReferences:
+      - name: tigera-pull-secret
+
