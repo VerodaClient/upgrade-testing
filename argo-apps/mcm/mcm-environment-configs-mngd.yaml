@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     path: environments
-    repoURL: 'git@github.com:VerodaClient/mcm-testing.git'
+    repoURL: 'git@github.com:VerodaClient/upgrade-testing.git'
     targetRevision: HEAD
   syncPolicy:
     automated:

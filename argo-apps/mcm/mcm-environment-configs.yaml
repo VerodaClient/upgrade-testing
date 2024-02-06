@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'git@github.com:VerodaClient/mcm-testing.git'
+    repoURL: 'git@github.com:VerodaClient/upgrade-testing.git'
     path: environments
     targetRevision: HEAD
   destination:
